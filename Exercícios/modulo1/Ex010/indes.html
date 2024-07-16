@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seuu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto--.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto+-.png" type="image/png">
+        <img src="imagens/foto++.png" alt="imagem flexivel">
+
+        <h1>Reproduzindo aúdio</h1>
+        <p>Vamos aprender a reproduzir aúdios em HTML5.</p>
+        <audio src="midia/Little Umbrellas - TrackTribe - Atalho.lnk" controls autoplay></audio>
+        <!--- outros formatos patra usar em navegadores: MP3,WAV e OGG -->
+        <audio preload="metadata" autoplay controls loop>
+          <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+          <source src="midia/guanacast-33.ogg" type="audio/ogg">
+          <source src="midia/guanacast-33.wav" type="audio/wav">
+          <p>Infelizmente seu navegador não consegue reproduzir o aúdio</p>
+          <a href="midia/guanacast-33.mp3"> Clique aqui para baixar!</a>
+        </audio>
+    </picture>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospadado no meu proprio servidor.</p>
+   <video width="500" poster="imagens/foto--.png" controls autoplay loop>
+     <source src="videos/meu-video.mp4.mp4" type="video/mp4">
+     <source src="videos/meu-video2.mkv.mkv" type="video/mp4">
+     <source src="videos/meu-video.webm.webm" type="video/webm">
+   <p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+   </video>
+
+   <h1>Inserindo vídeos do youtube</h1>
+   <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=O-ZlS5GkYHgj6KIi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   <h1>Inserindo vídeos do vimeo</h1>
+   <iframe src="https://player.vimeo.com/video/331567154?h=3fbca331f6&portrait=0" width="500" height="209" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
